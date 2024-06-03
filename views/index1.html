@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Maps</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; }
+        #map { height: 60vh; width: 100%; }
+        #data-table { margin-top: 20px; border-collapse: collapse; }
+        #data-table th, #data-table td { border: 1px solid black; padding: 8px; text-align: left; }
+    </style>
+
+</head>
+<body>
+
+    <div id="map"></div>
+    <div id="gps-data">
+        <!-- GPS data will be dynamically inserted here -->
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

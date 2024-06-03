@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Tracking</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            margin: 0;
+        }
+        #map {
+            height: 100%;
+            width: 70%;
+        }
+        #status {
+            height: 100%;
+            width: 30%;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        .status-item {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="status">
+        <h2>Status Data</h2>
+        <p class="status-item" id="imei">IMEI: </p>
+        <p class="status-item" id="voltageLevel">Voltage Level: </p>
+        <p class="status-item" id="gsmSigStrength">GSM Signal Strength: </p>
+        <p class="status-item" id="ignition">Ignition: </p>
+        <p class="status-item" id="charging">Charging: </p>
+        <p class="status-item" id="alarmType">Alarm Type: </p>
+        <p class="status-item" id="gpsTracking">GPS Tracking: </p>
+        <p class="status-item" id="relayState">Relay State: </p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
